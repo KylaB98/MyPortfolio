@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import MyPic2 from "./MyPic2.jpeg";
-
 
 const Container = styled.div`
     font-size: 50px;
@@ -37,7 +35,7 @@ const Logo = styled.img`
 const About = () => {
   return (
     <Container id="about">
-        <Image src={MyPic2} />
+        <Image src='https://i.ibb.co/V3GBR3P/C5211082-3-A20-4631-95-DF-03-EE5-D4-D21-DE-1-105-c.jpg' />
         <p>My Name is Kyla Wootson, and I'm a full-stack developer based out of Atlanta, Georgia. I'm just starting out, but passionate about software development and the journey it will take me on. Always eager to learn and constantly seeking new ways to grow my skills, I'm ready jump-start my career!</p>
         <Logo src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 
