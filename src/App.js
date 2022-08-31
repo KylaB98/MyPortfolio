@@ -26,6 +26,10 @@ const Title = styled.h1`
   text-align: center;
   padding-top: 60px;
   font-family: 'Poiret One', cursive;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    font-size: 45px;
+  }
 `;
 
 const Hr = styled.hr`

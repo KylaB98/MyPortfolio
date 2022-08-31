@@ -13,6 +13,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `
 
 const Section = styled.div`

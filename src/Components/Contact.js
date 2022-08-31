@@ -7,6 +7,12 @@ const Container = styled.div`
     align-items: center;
     padding-bottom: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+      }
 `
 
 const Form = styled.form`
@@ -16,12 +22,25 @@ const Form = styled.form`
     justify-items: center;
     text-align: center;
     padding: 20px;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+      }
 }
 `
 
 const Label = styled.h1`
     margin: 5px 10px 5px 0;
     font-family: 'Didact Gothic', sans-serif;
+
+    @media only screen and (max-width: 480px) {
+        width: 70%;
+        height: 70%;
+        font-size: 25px;
+        text-align: center;
+      }
 `
 const Input = styled.input`
     height: 50px;
@@ -33,6 +52,12 @@ const Input = styled.input`
     font-size: 25px;
     font-family: 'Didact Gothic', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 480px) {
+        width: 300px;
+        height: 50px;
+        font-size: 25px;
+      }
 `
 
 const Button = styled.button`
@@ -48,6 +73,13 @@ const Button = styled.button`
     font-size: 25px;
     font-family: 'Didact Gothic', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 480px) {
+        width: 300px;
+        height: 50px;
+        font-size: 25px;
+        margin-left: 25px;
+      }
 `
 
 const Contact = () => {
@@ -78,7 +110,7 @@ const Contact = () => {
 
   return (
     <Container id="contact">
-            <Form onSubmit= {handleSubmit}>
+            <Form id="contact-form" onSubmit= {handleSubmit}>
                 <div>
                     <Label htmlFor= "name"> Name:</Label>
                     <Input type="text" id="name" required />

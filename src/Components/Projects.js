@@ -12,6 +12,18 @@ const Container = styled.div`
   grid-column-gap: 25px;
   grid-row-gap: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media only screen and (max-width: 480px) {
+    padding-bottom: 400px;
+    height: 300px;
+    width: 290px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 `
 
 const Title = styled.h1`

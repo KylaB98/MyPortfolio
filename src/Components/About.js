@@ -9,6 +9,11 @@ const Container = styled.div`
     margin-bottom: 0px;
     font-family: 'Didact Gothic', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      font-size: 25px;
+    }
 `;
 
 const Title = styled.h1`
@@ -24,12 +29,24 @@ const Image = styled.img`
     border-radius: 20px;
     margin-top: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 480px) {
+      width: 70%;
+      height: 70%;
+      font-size: 25px;
+    }
 `;
 
 const Logo = styled.img`
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     padding: 10px;
+
+    @media only screen and (max-width: 480px) {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+    }
 `
 
 const About = () => {

@@ -20,6 +20,11 @@ const Info = styled.div`
     transition:all 0.5s ease;
     cursor: pointer;
     border-radius: 20px;
+
+    @media only screen and (max-width: 480px) {
+        height: 150px;
+        width: 250px;
+      }
 `
 
 const Container = styled.div`
@@ -40,6 +45,13 @@ const Container = styled.div`
     }
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 480px) {
+        height: 150px;
+        width: 250px;
+        padding: 5px;
+      }
+
     `;
 
 const Image = styled.img`
@@ -47,6 +59,11 @@ const Image = styled.img`
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+
+    @media only screen and (max-width: 480px) {
+        height: 150px;
+        width: 250px;
+      }
 `
 
 const Title = styled.h1`

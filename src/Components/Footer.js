@@ -10,10 +10,20 @@ const Container = styled.div`
 
 const Section = styled.div`
     text-align: center;
+
+    @media only screen and (max-width: 480px) {
+        padding: 10px;
+      }
 `
 const Logo = styled.img`
     height: 300px;
     width: 300px;
+
+    @media only screen and (max-width: 480px) {
+        height: 80px;
+        width: 80px;
+        font-size: 14px;
+      }
 `
 
 const IconList = styled.div`
@@ -24,6 +34,12 @@ const Icon = styled.div`
     width: 80px;
     height: 80px;
     padding: 15px;
+
+    @media only screen and (max-width: 480px) {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+      }
 `
 
 const Footer = () => {
