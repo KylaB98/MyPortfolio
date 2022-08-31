@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import Nav from "./Components/Nav";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import PLogo from "./PLogo.png";
+import { HashLink as Link } from "react-router-hash-link";
+
+const Container = styled.div`
+  background-color: rgba(164, 195, 178, 0.5);
+  border-radius: 20px;
+`
+
+const Header = styled.div`
+  font-size: 120px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Poiret One', cursive;
+  text-shadow: 3px 5px 5px;
+`
+
+const Title = styled.h1`
+  font-size: 90px;
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Poiret One', cursive;
+`;
+
+const Hr = styled.hr`
+  border-top: 5px solid black;
+  border-radius: 5px;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+        <Hr className="rounded" />
+        <Nav />
+        <Hr className="rounded" />
+          <Title>About Me</Title>
+          <About className='about' />
+          <Hr className="rounded" />
+        <Title>My Projects</Title>
+          <Projects className="projects">Linked</Projects>
+          <Hr className="rounded" />
+        <Title>Get in Touch</Title>
+        <Contact />
+        <Hr className="rounded" />
+        <Footer />
+    </Container>
   );
 }
 
